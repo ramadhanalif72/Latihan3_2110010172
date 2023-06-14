@@ -3,14 +3,35 @@ package geometri;
 
 
 public class PesegiPanjang {
-    double panjang, lebar;
-    
-    public double luas(){
-        return(luas);
+    private double panjang;
+    private double lebar;
+
+    public PesegiPanjang(double panjang, double lebar) {
+        this.panjang = panjang;
+        this.lebar = lebar;
     }
-    
-    public double keliling () {
-        return;
+
+    public double getPanjang() {
+        return panjang;
     }
-    
+
+    public void setPanjang(double panjang) {
+        this.panjang = panjang;
+    }
+
+    public double getLebar() {
+        return lebar;
+    }
+
+    public void setLebar(double lebar) {
+        this.lebar = lebar;
+    }
+
+    public double luas() {
+        return panjang * lebar;
+    }
+
+    public double keliling() {
+        return 2 * (panjang + lebar);
+    }
 }
